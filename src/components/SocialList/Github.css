@@ -1,0 +1,19 @@
+.github {
+    color: #333;
+}
+
+.github:link {
+    color: #333;
+}
+
+.github:visited {
+    color: #333;
+}
+
+.github:hover {
+    color: rgb(12, 12, 12);
+}
+
+.github:active {
+    color: rgb(12, 12, 12);
+}

@@ -1,0 +1,21 @@
+.icon {
+    color: #8cb0c5 !important;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+.icon:link {
+    color: #8cb0c5;
+}
+
+.icon:visited {
+    color: #8cb0c5;
+}
+
+.icon:hover {
+    color: #304d5e;
+}
+
+.icon:active {
+    color: #304d5e;
+}

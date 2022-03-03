@@ -1,0 +1,11 @@
+.card { 
+    border: 1px solid #8cb0c5;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 18rem;
+    height: auto;
+}
+
+.card h2 {
+    color: #8cb0c5;
+}
