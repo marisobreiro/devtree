@@ -1,12 +1,12 @@
 body {
-  background: linear-gradient(to right, #536976, #454c74);
-  margin: 0;
-  text-align: center;
-  font-family: 'RobotoMono', monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(to right, #485563, #29323c);
+    margin: 0;
+    text-align: center;
+    font-family: 'RobotoMono', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: 'RobotoMono', monospace;
+    font-family: 'RobotoMono', monospace;
 }

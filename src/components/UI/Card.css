@@ -1,5 +1,5 @@
 .card { 
-    border: 1px solid #8cb0c5;
+    border: 1px solid #8cc596;
     border-radius: 1rem;
     padding: 1rem;
     width: 18rem;
@@ -7,5 +7,5 @@
 }
 
 .card h2 {
-    color: #8cb0c5;
+    color: #8cc596;
 }
