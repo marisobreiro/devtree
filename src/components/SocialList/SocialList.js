@@ -1,5 +1,6 @@
-import Github from "./Github";
-import Linkedin from "./Linkedin";
+import {FaLinkedin} from 'react-icons/fa';
+import {FaGithub} from 'react-icons/fa';
+import Icon from "../UI/Icon";
 
 import './SocialList.css'
 
@@ -7,8 +8,10 @@ function SocialList() {
 
     return (
         <div className="social-list">
-            <Linkedin />
-            <Github />
+            <Icon>
+                <a href='https://www.linkedin.com/in/mariana-sobreiro/'><FaLinkedin className="social-list__item"/></a>
+                <a href='https://github.com/marisobreiro'><FaGithub className="social-list__item"/></a>
+            </Icon>
         </div>
     )
 }

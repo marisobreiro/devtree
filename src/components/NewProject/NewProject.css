@@ -8,14 +8,3 @@
     text-align: center;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }
-
-.new-project button {
-    font-weight: bold;
-    cursor: pointer;
-    padding: 1rem 2rem;
-    border: 1px solid #8cc596;
-    background-color: #29323c;
-    color: white;
-    border-radius: 12px;
-    margin-right: 1rem;
-}

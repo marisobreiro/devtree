@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectStack from "./ProjectStack"
 
 import './ProjectForm.css'
 
@@ -15,21 +16,8 @@ function ProjectForm() {
                     <label>Descrição</label>
                     <input type="text" />
                 </div>
-                <div className="new-project__information">
-                    <label>Stack</label>
-                    <select>
-                        <option>React.js</option>
-                        <option>Vue.js</option>
-                        <option>HTML5</option>
-                        <option>CSS3</option>
-                        <option>JavaScript</option>
-                        <option>Sass</option>
-                        <option>Bootstrap</option>
-                        <option>Typescript</option>
-                        <option>Phyton</option>
-                    </select>
-                    </div>
-                <div>
+                <ProjectStack />
+                <div className="new-project__button">
                     <button>Salvar</button>
                 </div>
             </div>

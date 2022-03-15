@@ -17,8 +17,27 @@
 
 .new-project__information input,
 .new-project__information select {
-    font-family: 'RobotoMono', monospace;
-    padding: 0.5rem;
     border-radius: 10px;
     border: 1px solid #FFF;
+    font-family: 'RobotoMono', monospace;
+    padding: 0.5rem;
+}
+
+.new-project__button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.new-project__button button {
+    border: none;
+    border-radius: 10px;
+    font-family: 'RobotoMono', monospace;
+    padding: 0.5rem 0.5rem !important;
+}
+
+
+.new-project__button button:hover,
+.new-project__button button:active {
+    background-color: #29323c;
+    color: #FFF;
 }
