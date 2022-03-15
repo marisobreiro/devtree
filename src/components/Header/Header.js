@@ -7,7 +7,7 @@ function Header() {
 
     return (
         <div className="header">
-            <h1>DevTree </h1>
+            <h1>devtree</h1>
             <Icon>
                 <FaTree />
             </Icon>

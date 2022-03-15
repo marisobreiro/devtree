@@ -1,4 +1,5 @@
 import {FaLeaf} from 'react-icons/fa';
+import Stack from './Stack';
 import Icon from '../UI/Icon';
 import Card from '../UI/Card';
 
@@ -13,6 +14,7 @@ function Project() {
             </Icon>
             <h2>Título do projeto</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla est nec diam blandit, sed posuere libero faucibus.</p>
+            <Stack />
         </Card>
     );
 }
