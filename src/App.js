@@ -1,7 +1,7 @@
 import Header from './components/Header/Header';
-import SocialList from "./components/SocialList/SocialList";
 import Portfolio from "./components/Portfolio/Porfolio";
-import NewProject from "./components/NewProject/NewProject";
+import SocialList from "./components/SocialList/SocialList";
+import NewProject from './components/NewProjectForm/NewProject';
 
 function App() {
 

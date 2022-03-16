@@ -1,0 +1,29 @@
+.new-project-form {
+    background-color: rgba(140, 197, 150, 0.50);
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.new-project-form__button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.new-project-form__button button {
+    border: none;
+    border-radius: 10px;
+    font-family: 'RobotoMono', monospace;
+    padding: 0.5rem 0.5rem !important;
+}
+
+
+.new-project-form__button button:hover,
+.new-project-form__button button:active {
+    background-color: #29323c;
+    color: #FFF;
+}

@@ -3,9 +3,9 @@ import React from "react";
 import './ProjectStack.css'
 
 
-function ProjectStack () {
+function ProjectStack (options, aa) {
     return (
-        <div className="new-project__information">
+        <div className="new-project__checkbox">
             <label>Stack</label>
             <div className="checkbox">
                 <label>

@@ -1,20 +1,34 @@
+.new-project__checkbox {
+    text-align: left;
+    margin-top: 1rem;
+}
+
 .checkbox {
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-top: 0.6rem;
 }
 
 .checkbox-icon {
     all: unset;
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     border: none !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1.5rem;
     display: inline-block;
     position: relative;
+    margin-right: 1rem;
 }
+
+.checkbox-icon:checked {
+    background-color: #8cc596;
+    border-radius: 50%;
+}
+
+/* Checkbox Icons */
 
 .react {
     background-image: url('/src/img/react.svg');
@@ -46,10 +60,5 @@
 
 .sass {
     background-image: url('/src/img/sass.svg');
-}
-
-.checkbox-icon:checked {
-    background-color: #8cc596;
-    border-radius: 50%;
 }
 
