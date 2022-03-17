@@ -1,8 +1,7 @@
 .stack-badges {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .stack-badge {
@@ -10,7 +9,7 @@
     color: #000;
     background-color: #8cc596;
     border-radius: 1rem;
-    padding: 0 1rem;
+    padding: 0.5rem 0.5rem;
     width: auto;
-    margin-right: 1rem;
+    margin: 0.5rem 0.5rem 0 0;
 }

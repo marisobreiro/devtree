@@ -4,3 +4,8 @@
     align-items: center;
     justify-content: center;
 }
+
+.header-title {
+    color: #8cc596;
+    font-size: 2rem;
+}

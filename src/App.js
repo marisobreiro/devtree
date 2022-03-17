@@ -1,16 +1,18 @@
+import React from 'react';
+
 import Header from './components/Header/Header';
-import Portfolio from "./components/Portfolio/Porfolio";
-import SocialList from "./components/SocialList/SocialList";
-import NewProject from './components/NewProjectForm/NewProject';
+import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer/Footer";
+import AddNewProject from "./components/AddNewProject/AddNewProject";
 
 function App() {
 
     return (
         <div>
             <Header />
-            <NewProject />
-            <Portfolio />
-            <SocialList />
+            <AddNewProject />
+            <Projects />
+            <Footer />
         </div>
     )
 }

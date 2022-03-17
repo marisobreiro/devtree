@@ -1,3 +1,4 @@
+import React, {useState} from 'react';
 import {FaLeaf} from 'react-icons/fa';
 import Stack from './Stack';
 import Icon from '../UI/Icon';
@@ -5,16 +6,20 @@ import Card from '../UI/Card';
 
 import './Project.css'
 
-function Project() {
+const Project = ({project}) => {
 
     return (
         <Card className="project">
             <Icon>
                 <FaLeaf />
             </Icon>
-            <h2>Título do projeto</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla est nec diam blandit, sed posuere libero faucibus.</p>
-            <Stack />
+            <h2>{project.title}</h2>
+            <p>{project.description}</p>
+            <div>
+                {project.stack.map((stack) => (
+                    <Stack stack={stack}/>
+                ))}
+            </div>
         </Card>
     );
 }

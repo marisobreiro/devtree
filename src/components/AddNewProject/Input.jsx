@@ -1,6 +1,6 @@
 import './Input.css'
 
-function Input({type, text, name, placeholder, handleOnChange, value}) {
+const Input = ({type, text, name, placeholder}) => {
     return (
         <div className="new-project-form__input">
             <label htmlFor={name}>{text}:</label>
@@ -8,9 +8,7 @@ function Input({type, text, name, placeholder, handleOnChange, value}) {
                 type={type} 
                 name={name} 
                 id={name} 
-                placeholder={placeholder} 
-                onChange={handleOnChange}
-                value={value}
+                placeholder={placeholder}
             />
         </div>
     )

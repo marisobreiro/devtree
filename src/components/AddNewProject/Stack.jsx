@@ -1,9 +1,9 @@
 import React from "react";
 
-import './ProjectStack.css'
+import './Stack.css'
 
 
-function ProjectStack (options, aa) {
+const ProjectStack = ({project}) => {
     return (
         <div className="new-project__checkbox">
             <label>Stack</label>

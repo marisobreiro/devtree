@@ -2,9 +2,9 @@ import {FaLinkedin} from 'react-icons/fa';
 import {FaGithub} from 'react-icons/fa';
 import Icon from "../UI/Icon";
 
-import './SocialList.css'
+import './Footer.css'
 
-function SocialList() {
+function Footer() {
 
     return (
         <div className="social-list">
@@ -16,4 +16,4 @@ function SocialList() {
     )
 }
 
-export default SocialList;
+export default Footer;
