@@ -1,10 +1,23 @@
-.stack-badges {
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 1rem 2rem 0;
+    color: #fff;
+}
+
+.project .button {
+    align-self: flex-end;
+}
+
+.project-badges {
     display: flex;
     flex-direction: row;
     justify-content: center;    
 }
 
-.stack-badge {
+.project-badges__item {
     font-size: 0.6rem;
     color: #000;
     background-color: #8cc596;

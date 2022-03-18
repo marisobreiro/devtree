@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button  {
+    border: none;
+    border-radius: 10px;
+    font-family: 'RobotoMono', monospace;
+    padding: 0.5rem 0.5rem !important;
+}
+
+
+.button:hover,
+.button:active {
+    background-color: #29323c;
+    color: #FFF;
+}

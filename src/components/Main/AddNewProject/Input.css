@@ -1,11 +1,11 @@
-.new-project-form__input {
+.input {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
     text-align: left;
 }
 
-.new-project-form__input input {
+.input input {
     border-radius: 10px;
     border: 1px solid #FFF;
     font-family: 'RobotoMono', monospace;
