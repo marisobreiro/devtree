@@ -36,10 +36,8 @@ const Main = () => {
         },
     ]);
 
-    const handleProjectAddition = (projectTitle) => {
+    const handleProjectAddition = ({}) => {
         const newProject = [... projects, {
-            id: Math.random(10),
-            name: projectTitle
             },
         ];
         setProjects(newProject);

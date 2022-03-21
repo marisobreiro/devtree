@@ -5,38 +5,34 @@ import Button from "../../UI/Button";
 
 import './AddNewProject.css';
 
-const AddNewProject = ({projects, handleProjectAddition}) => {
+const AddNewProject = ({handleProjectAddition, projectName, projectDescription}) => {
 
-    const [inputData, setInputData] = useState('');
-
-    const handleInputChange = (e) => {
-        setInputData({ ... inputData, [e.target.name]: e.target.value }) 
-    };
-
-    const handleAddProjectClick = () => {
-        handleProjectAddition(inputData)
+    const onSubmit = (e) => {
+        e.preventDefault();
+        const data ={
+            projectName: e.target.elements.projectName.value,
+            projectDescription: e.target.elements.projectDescription.value,
+        }
+        handleProjectAddition(data);
     }
 
-
     return (
-        <div className="new-project-form">
+        <form onSubmit={onSubmit} className="new-project-form">
             <Input 
                 type="text" 
                 text="Nome do projeto" 
-                name="name" 
+                name="projectName" 
                 placeholder="Insira aqui o nome do projeto"
-                handleOnChange={handleInputChange}
             />
             <Input 
                 type="text" 
                 text="Descrição do projeto"
-                name="description" 
+                name="projectDescription" 
                 placeholder="Descreva seu projeto aqui"
-                handleOnChange={handleInputChange}
             />
             <Stack />
-            <Button onClick={handleAddProjectClick}>Salvar</Button>
-        </div>
+            <Button type="submit">Salvar</Button>
+        </form>
     )
 }
 
