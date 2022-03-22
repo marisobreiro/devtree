@@ -1,17 +1,35 @@
 {
-    "projects" : [],
-    "categories": [
-        {
-            "id": 1,
-            "name": "ReactJS"
-        },
-        {
-            "id": 2,
-            "name": "VueJS"
-        },
-        {
-            "id": 3,
-            "name": "Angular"
-        }
-    ]
+  "projects": [
+    {
+      "projectName": "Patita",
+      "projectDescription": "Projeto feito com amor, dedicado a 4 patas",
+      "framework": {
+        "id": "2",
+        "name": "VueJS"
+      },
+      "id": 1
+    },
+    {
+      "projectName": "Project Cover",
+      "framework": {
+        "id": "2",
+        "name": "VueJS"
+      },
+      "id": 2
+    }
+  ],
+  "frameworks": [
+    {
+      "id": 1,
+      "name": "ReactJS"
+    },
+    {
+      "id": 2,
+      "name": "VueJS"
+    },
+    {
+      "id": 3,
+      "name": "Angular"
+    }
+  ]
 }

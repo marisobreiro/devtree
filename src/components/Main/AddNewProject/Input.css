@@ -5,10 +5,10 @@
     text-align: left;
 }
 
-.input input {
+.input input, .input select {
     border-radius: 10px;
     border: 1px solid #FFF;
     font-family: 'RobotoMono', monospace;
-    margin-top: 0.6rem;
+    margin: 0.6rem 0 0.5rem 0;
     padding: 0.5rem;
 }

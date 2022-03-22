@@ -1,55 +1,51 @@
-import React, { useState } from "react";
+import React, {useState, useEffect} from "react";
+import { useNavigate } from "react-router-dom";
 import AddNewProject from "./AddNewProject/AddNewProject";
 import Project from "./Projects/Project";
 
 import './Main.css'
 
-const Main = () => {
+function Main() {
 
-    const [projects, setProjects] = useState([
-        {
-            id: "1",
-            title: "Patita",
-            description: "Lorem ipsun et ahk fggltlpr",
-            link: "github.com.br/marisobreiro",
-            stack: [
-                "HTML", "CSS", "JavaScript", "Thymeleaf"
-            ]
-        },
-        {
-            id: "2",
-            title: "Project Cover",
-            description: "Lorem ipsun et ahk fggltlpr",
-            link: "github.com.br/marisobreiro",
-            stack: [
-                "HTML", "CSS", "JavaScript", "Bootstrap"
-            ]
-        },
-        {
-            id: "3",
-            title: "Portifólio",
-            description: "Lorem ipsun et ahk fggltlpr",
-            link: "github.com.br/marisobreiro",
-            stack: [
-                "HTML", "CSS", "JavaScript"
-            ]
-        },
-    ]);
+    const navigate = useNavigate()
+    
+    const [data, setData] = useState([])
 
-    const handleProjectAddition = ({}) => {
-        const newProject = [... projects, {
+    useEffect (() => {
+        fetch('http://localhost:5000/projects', {
+            method: "GET",
+            headers: {
+                'Content-Type': 'application/json',
+                Origin: 'http://localhost:5000'
+            }, 
+        })
+            .then((resp) => resp.json())
+            .then((data) => {
+                setData(data)
+            })
+            .catch((err) => console.log(err))
+    }, [])
+
+    function createPost(project) {
+        fetch('http://localhost:5000/projects', {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json',
             },
-        ];
-        setProjects(newProject);
+            body: JSON.stringify(project),
+        }) 
+            .then((resp) => resp.json())
+            .then((data) => {
+                navigate('/projects', { message: 'Projeto criado com sucesso'})
+            })
+            .catch((err) => console.log(err))
     }
 
     return (
         <>
-            <AddNewProject handleProjectAddition={handleProjectAddition}/>
+            <AddNewProject handleSubmit={createPost} btnText="Adicionar projeto" />
             <div className="projects">
-                {projects.map((project) => (
-                    <Project project={project}/>
-                ))}
+                <Project thing={data} />
             </div>
         </>
     )

@@ -5,7 +5,8 @@ import Card from '../../UI/Card';
 
 import './Project.css'
 
-const Project = ({project}) => {
+
+function Project({}) {
 
     return (
         <Card className="project">
@@ -13,8 +14,10 @@ const Project = ({project}) => {
             <Icon>
                 <FaLeaf />
             </Icon>
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
+            <div>
+
+            </div>
+            <p></p>
         </Card>
     );
 }
