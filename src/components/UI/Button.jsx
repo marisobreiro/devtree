@@ -2,9 +2,9 @@ import React from "react";
 
 import './Button.css'
 
-const Button = ({ text, type }) => {
+const Button = ({ text, type, url }) => {
     return (
-        <button type={type} className="button">
+        <button type={type} href={url} className="button">
             {text}
         </button>
     )

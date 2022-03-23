@@ -6,18 +6,19 @@ import Card from '../../UI/Card';
 import './Project.css'
 
 
-function Project({}) {
+function Project({ name, description, url, framework, handleRemove}) {
 
     return (
         <Card className="project">
-            <FaPlus className='button'/>
+            <FaPlus className="button" href={url}/>
             <Icon>
                 <FaLeaf />
             </Icon>
-            <div>
-
+            <div className="project-content">
+                <h2>{name}</h2>
+                <p>{description}</p>
+                <p className="project-content__badge">{framework}</p>
             </div>
-            <p></p>
         </Card>
     );
 }

@@ -1,28 +1,29 @@
 .project {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 1rem 2rem 0;
+    margin: 1rem 1rem 1rem 0;
     color: #fff;
 }
 
 .project .button {
     align-self: flex-end;
+    justify-content: flex-start;
 }
 
-.project-badges {
+.project-content {
     display: flex;
-    flex-direction: row;
-    justify-content: center;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0 1rem 0;
 }
 
-.project-badges__item {
+.project-content__badge {
     font-size: 0.6rem;
     color: #000;
     background-color: #8cc596;
     border-radius: 1rem;
     padding: 0.5rem 0.5rem;
-    width: auto;
-    margin: 0.5rem 0.5rem 0 0;
+    width: 4rem;
+    margin: 0.5rem 0.5rem 0 0;  
 }

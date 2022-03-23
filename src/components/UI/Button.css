@@ -1,13 +1,11 @@
-.container {
-    display: flex;
-    justify-content: flex-end;
-}
-
 .button  {
+    align-self: flex-end;
     border: none;
     border-radius: 10px;
     font-family: 'RobotoMono', monospace;
+    margin-top: 1rem;
     padding: 0.5rem 0.5rem !important;
+    width: auto;
 }
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Input.css'
 
-const Input = ({type, text, name, placeholder, handleOnChange, value}) => {
+const Input = ({type, text, name, placeholder, maxlen, handleOnChange, value}) => {
     
     return (
         <div className="input">
@@ -9,6 +9,8 @@ const Input = ({type, text, name, placeholder, handleOnChange, value}) => {
                 {text}:
             </label>
             <input 
+                required
+                autoComplete='off'
                 type={type}
                 name={name}
                 id={name}

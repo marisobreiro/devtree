@@ -1,11 +1,20 @@
 .new-project-form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     background-color: rgba(140, 197, 150, 0.50);
     padding: 1rem;
-    margin: 2rem auto;
-    width: 50rem;
+    margin: 2rem;
+    width: 50vw;
     max-width: 95%;
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 600px) {
+    .new-project-form {
+        width: 80vw;
+    }
 }
 

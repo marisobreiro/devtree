@@ -2,20 +2,53 @@
   "projects": [
     {
       "projectName": "Patita",
-      "projectDescription": "Projeto feito com amor, dedicado a 4 patas",
+      "projectDescription": "Amor dedicado ao companheiros de 4 patas",
+      "projectUrl": "http://www.patita.com.br",
       "framework": {
-        "id": "2",
-        "name": "VueJS"
+        "id": "1",
+        "name": "ReactJS"
       },
       "id": 1
     },
     {
+      "projectUrl": "www.projectcover.com.br",
       "projectName": "Project Cover",
+      "projectDescription": "Transforme seus álbuns favoritos em quadros",
+      "framework": {
+        "id": "3",
+        "name": "Angular"
+      },
+      "id": 2
+    },
+    {
+      "projectName": "Portifolio",
+      "projectDescription": "Vitrine para os principais projetos criados",
+      "projectUrl": "marisobreiro.github.com",
       "framework": {
         "id": "2",
         "name": "VueJS"
       },
-      "id": 2
+      "id": 3
+    },
+    {
+      "projectName": "Devtree",
+      "projectDescription": "Cardápio dos seus links favoritos. Feito de Dev para dev",
+      "projectUrl": "devtree.github.com",
+      "framework": {
+        "id": "1",
+        "name": "ReactJS"
+      },
+      "id": 4
+    },
+    {
+      "projectName": "Teste ",
+      "projectDescription": "Teste teste teste jda tesioqjewp",
+      "projectUrl": "teste.com.br",
+      "framework": {
+        "id": "2",
+        "name": "VueJS"
+      },
+      "id": 5
     }
   ],
   "frameworks": [

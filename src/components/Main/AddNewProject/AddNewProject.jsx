@@ -62,6 +62,15 @@ function AddNewProject ({ handleSubmit, btnText, projectData }) {
                 handleOnChange={handleChange}
                 value={project.description}
             />
+            <Input 
+                type="text"
+                text="Link do projeto"
+                name="projectUrl"
+                placeholder="Insira o link do projeto aqui"
+                handleOnChange={handleChange}
+                value={project.url}
+
+            />
             <Select 
                 name="projectStack"
                 text="Stack do projeto"
@@ -69,7 +78,10 @@ function AddNewProject ({ handleSubmit, btnText, projectData }) {
                 handleOnChange={handleStack}
                 value={project.framework ? project.framework.id: ''}
             />
-            <Button type="submit" text={btnText}></Button>
+            <Button 
+                type="submit" 
+                text={btnText}>
+            </Button>
         </form>
     )
 }

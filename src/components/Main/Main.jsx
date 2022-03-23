@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import AddNewProject from "./AddNewProject/AddNewProject";
 import Project from "./Projects/Project";
@@ -9,23 +9,6 @@ function Main() {
 
     const navigate = useNavigate()
     
-    const [data, setData] = useState([])
-
-    useEffect (() => {
-        fetch('http://localhost:5000/projects', {
-            method: "GET",
-            headers: {
-                'Content-Type': 'application/json',
-                Origin: 'http://localhost:5000'
-            }, 
-        })
-            .then((resp) => resp.json())
-            .then((data) => {
-                setData(data)
-            })
-            .catch((err) => console.log(err))
-    }, [])
-
     function createPost(project) {
         fetch('http://localhost:5000/projects', {
             method: 'POST',
@@ -41,13 +24,39 @@ function Main() {
             .catch((err) => console.log(err))
     }
 
+    const [projects, setProjects] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:5000/projects', {
+            method: "GET",
+            headers: {
+                'Content-Type': 'application/json',
+                Origin:'http://localhost:5000',
+            },
+        })
+            .then((resp) => resp.json())
+            .then((data) => {
+                console.log(data)
+                setProjects(data)
+            })
+            .catch((err) => console.log(err))
+    }, [])
+
     return (
-        <>
+        <div className="container">
             <AddNewProject handleSubmit={createPost} btnText="Adicionar projeto" />
             <div className="projects">
-                <Project thing={data} />
+                {projects.length > 0 && 
+                    projects.map((project) => (
+                        <Project
+                            name={project.projectName}
+                            description={project.projectDescription}
+                            url={project.url}
+                            framework={project.framework.name}
+                        />
+                    ))}
             </div>
-        </>
+        </div>
     )
 }
 
