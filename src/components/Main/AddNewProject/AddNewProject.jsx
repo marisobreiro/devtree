@@ -20,7 +20,7 @@ function AddNewProject ({ handleSubmit, btnText, projectData }) {
         }) 
             .then((resp) => resp.json())
             .then((data) => {
-                setFrameworks(data)
+                setFrameworks(data);
             })
             .catch((err) => console.log(err))
     }, [])
