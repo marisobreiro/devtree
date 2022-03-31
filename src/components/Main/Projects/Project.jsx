@@ -1,16 +1,24 @@
 import React from 'react';
-import {FaLeaf, FaPlus}  from 'react-icons/fa';
+import {FaLeaf, FaPlus, FaTrashAlt}  from 'react-icons/fa';
 import Icon from '../../UI/Icon';
 import Card from '../../UI/Card';
 
 import './Project.css'
 
 
-function Project({ name, description, url, framework, handleRemove}) {
+function Project({ id, name, description, url, framework, handleRemove}) {
+
+    const remove = (e) => {
+        e.preventDefault();
+        handleRemove(id);
+    }
 
     return (
         <Card className="project">
-            <FaPlus className="button" href={url}/>
+            <div className='project-actions'>
+                <FaPlus className="button" href={url}/>
+                <FaTrashAlt className='button' onClick={remove}/>
+            </div>
             <Icon>
                 <FaLeaf />
             </Icon>

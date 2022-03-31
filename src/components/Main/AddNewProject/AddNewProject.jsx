@@ -15,7 +15,7 @@ function AddNewProject ({ handleSubmit, btnText, projectData }) {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json',
-                Origin: 'http://localhost:5000'
+                Origin: 'http://localhost:3000'
             },
         }) 
             .then((resp) => resp.json())

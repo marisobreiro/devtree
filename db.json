@@ -39,16 +39,6 @@
         "name": "ReactJS"
       },
       "id": 4
-    },
-    {
-      "projectName": "Teste ",
-      "projectDescription": "Teste teste teste jda tesioqjewp",
-      "projectUrl": "teste.com.br",
-      "framework": {
-        "id": "2",
-        "name": "VueJS"
-      },
-      "id": 5
     }
   ],
   "frameworks": [

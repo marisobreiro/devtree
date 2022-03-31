@@ -14,6 +14,7 @@ function Main() {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
+                Origin: 'http://localhost:5000',
             },
             body: JSON.stringify(project),
         }) 
@@ -42,6 +43,19 @@ function Main() {
             .catch((err) => console.log(err))
     }, [])
 
+    function removeProject(id) {
+        fetch(`http://localhost:5000/projects/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        }).then(resp => resp.json())
+        .then(data => {
+            setProjects(projects.filter((project) => project.id !== id))
+        })
+        .catch(err => console.log(err))
+    }
+
     return (
         <div className="container">
             <AddNewProject handleSubmit={createPost} btnText="Adicionar projeto" />
@@ -49,10 +63,12 @@ function Main() {
                 {projects.length > 0 && 
                     projects.map((project) => (
                         <Project
+                            id={project.id}
                             name={project.projectName}
                             description={project.projectDescription}
                             url={project.url}
                             framework={project.framework.name}
+                            handleRemove={removeProject}
                         />
                     ))}
             </div>

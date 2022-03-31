@@ -5,9 +5,10 @@
     color: #fff;
 }
 
-.project .button {
-    align-self: flex-end;
-    justify-content: flex-start;
+.project-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .project-content {
