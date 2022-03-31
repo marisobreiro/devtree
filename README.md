@@ -40,6 +40,8 @@ Em seguida, em outro terminal, inicialize o fronend da aplicação
 - [ ] Edição de projetos do catálogo (Edit)
 - [ ] Link para redirecionamento ao repositório
 - [ ] Melhorias para o formulário
+- [ ] Mensagens de sucesso/erro
+- [ ] Loader
 
 ## Stack utilizada
 - ReactJS
