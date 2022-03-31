@@ -36,7 +36,7 @@ Em seguida, em outro terminal, inicialize o fronend da aplicação
 - [x] Formulário de adição de projetos (Adição de dados no backend)
 - [x] Catálogo de projetos adicionados (Recuperação de dados do backend e exibição no front)
 - [x] Ajustes responsivos + UI
-- [ ] Exclusão de projetos do catálogo (Delete)
+- [x] Exclusão de projetos do catálogo (Delete)
 - [ ] Edição de projetos do catálogo (Edit)
 - [ ] Link para redirecionamento ao repositório
 - [ ] Melhorias para o formulário
