@@ -9,7 +9,7 @@ Desenvolvido com
 Uma aplicação desenvolvida em ReactJS voltada para Devs divulgarem seus principais projetos. Um portifólio simples e intuitivo.
 
 
-Inpirado por "Linktree"
+Inspirado por "Linktree"
 
 Status: __Em construção__
 
