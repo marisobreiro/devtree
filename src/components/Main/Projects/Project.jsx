@@ -16,7 +16,7 @@ function Project({ id, name, description, url, framework, handleRemove}) {
     return (
         <Card className="project">
             <div className='project-actions'>
-                <FaPlus className="button" href={url}/>
+                <FaPlus className="button" href={[url]}/>
                 <FaTrashAlt className='button' onClick={remove}/>
             </div>
             <Icon>

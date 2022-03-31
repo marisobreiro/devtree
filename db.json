@@ -21,16 +21,6 @@
       "id": 2
     },
     {
-      "projectName": "Portifolio",
-      "projectDescription": "Vitrine para os principais projetos criados",
-      "projectUrl": "marisobreiro.github.com",
-      "framework": {
-        "id": "2",
-        "name": "VueJS"
-      },
-      "id": 3
-    },
-    {
       "projectName": "Devtree",
       "projectDescription": "Cardápio dos seus links favoritos. Feito de Dev para dev",
       "projectUrl": "devtree.github.com",
@@ -53,6 +43,10 @@
     {
       "id": 3,
       "name": "Angular"
+    },
+    {
+      "id": 4,
+      "name": "HTML + CSS"
     }
   ]
 }

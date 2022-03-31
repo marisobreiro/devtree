@@ -1,0 +1,9 @@
+.msg {
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    color: #fff;
+    padding: 1rem;
+    width: 50vw;
+    height: auto;
+}

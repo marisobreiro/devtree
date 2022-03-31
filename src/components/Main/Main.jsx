@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import AddNewProject from "./AddNewProject/AddNewProject";
 import Project from "./Projects/Project";
+import Message from "../UI/Message";
 
 import './Main.css'
 
@@ -59,6 +60,7 @@ function Main() {
     return (
         <div className="container">
             <AddNewProject handleSubmit={createPost} btnText="Adicionar projeto" />
+            <Message msg="Teste" />
             <div className="projects">
                 {projects.length > 0 && 
                     projects.map((project) => (
